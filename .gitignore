@@ -1,0 +1,53 @@
+# Node.js
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+besu_docker_lib/node_modules/
+scripts/node_modules/
+
+# Build output
+besu_docker_lib/dist/
+
+# Coverage
+coverage/
+besu_docker_lib/coverage/
+
+# Jest
+besu_docker_lib/jest-coverage/
+
+# TypeScript
+*.tsbuildinfo
+
+# Misc
+.DS_Store
+.env
+.env.*
+*.local
+*.swp
+*.swo
+
+# VSCode
+.vscode/
+
+# Ignore test output
+besu_docker_lib/test/
+
+# Ignore script output
+scripts/tests/
+
+# Ignore OS generated files
+Thumbs.db
+
+# Ignore networks directories except Keypair
+networks/!
+web/networks/*/
+!web/networks/Keypair/
+besu_docker_lib/networks/
+scripts/networks/

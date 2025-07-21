@@ -1,0 +1,31 @@
+{
+  "name": "nodo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate": "node generate-transactions.js",
+    "generate-contract": "node generate-transactions.js --contract",
+    "generate-continuous": "node generate-transactions.js --continuous",
+    "check-blocks": "node generate-transactions.js --check",
+    "check-pending": "node generate-transactions.js --pending",
+    "generate-types": "node generate-transaction-types.js",
+    "check-types": "node generate-transaction-types.js check",
+    "clear-pending": "node generate-transaction-types.js clear"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "docker-manager": "^0.4.4",
+    "dockerode": "^4.0.7",
+    "dotenv": "^17.0.1",
+    "elliptic": "^6.6.1",
+    "ethers": "^6.14.4",
+    "keccak256": "^1.0.6"
+  },
+  "devDependencies": {
+    "@types/dockerode": "^3.3.41"
+  }
+}
